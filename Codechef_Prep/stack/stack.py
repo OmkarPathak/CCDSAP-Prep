@@ -18,12 +18,33 @@ class Stack(object):
         self._S = []
         self.top = -1
 
+    def __str__(self):
+        return ', '.join([str(i) for i in self._S])
+
+    def __setitem__(self, index, value):
+        '''
+            to set an element in the stack
+        '''
+        self._S[index] = value
+
+    def __getitem__(self, index):
+        '''
+            to retrieve an stack element
+        '''
+        return self._S[index]
+
     def push(self, element):
+        '''
+            :param element: data element to be pushed onto stack
+        '''
         self._S.append(element)
         self.top += 1
         return
 
     def pop(self):
+        '''
+            pops the topmost element from stack
+        '''
         if not self.is_empty():
             self.top -= 1
             value = self._S[self.top + 1]
@@ -33,10 +54,13 @@ class Stack(object):
             raise UnderflowException
 
     def is_empty(self):
+        '''
+            returns True if stack is empty else returns false
+        '''
         return len(self._S) == 0
 
-    def __str__(self):
-        return ', '.join([str(i) for i in self._S])
+    def peek(self):
+        return self._S[self.top]
         
 if __name__ == '__main__':
     stack = Stack()
