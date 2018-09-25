@@ -15,17 +15,17 @@ class OverflowException(Exception):
 
 class Stack(object):
     def __init__(self):
-        self._S = []
+        self._stack = []
         self.top = -1
 
     def __str__(self):
-        return ', '.join([str(i) for i in self._S])
+        return ', '.join([str(i) for i in self._stack])
 
     def push(self, element):
         '''
             :param element: data element to be pushed onto stack
         '''
-        self._S.append(element)
+        self._stack.append(element)
         self.top += 1
         return
 
@@ -35,8 +35,8 @@ class Stack(object):
         '''
         if not self.is_empty():
             self.top -= 1
-            value = self._S[self.top + 1]
-            del self._S[self.top + 1]
+            value = self._stack[self.top + 1]
+            del self._stack[self.top + 1]
             return value
         else:
             raise UnderflowException
@@ -45,13 +45,13 @@ class Stack(object):
         '''
             returns True if stack is empty else returns false
         '''
-        return len(self._S) == 0
+        return len(self._stack) == 0
 
     def peek(self):
         '''
             returns the top element from the stack
         '''
-        return self._S[self.top]
+        return self._stack[self.top]
         
 if __name__ == '__main__':
     stack = Stack()
