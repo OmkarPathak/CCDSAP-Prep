@@ -21,18 +21,6 @@ class Stack(object):
     def __str__(self):
         return ', '.join([str(i) for i in self._S])
 
-    def __setitem__(self, index, value):
-        '''
-            to set an element in the stack
-        '''
-        self._S[index] = value
-
-    def __getitem__(self, index):
-        '''
-            to retrieve an stack element
-        '''
-        return self._S[index]
-
     def push(self, element):
         '''
             :param element: data element to be pushed onto stack
@@ -60,6 +48,9 @@ class Stack(object):
         return len(self._S) == 0
 
     def peek(self):
+        '''
+            returns the top element from the stack
+        '''
         return self._S[self.top]
         
 if __name__ == '__main__':
