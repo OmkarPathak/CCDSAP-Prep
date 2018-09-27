@@ -51,6 +51,8 @@ class Stack(object):
         '''
             returns the top element from the stack
         '''
+        if self.is_empty():
+            return -1
         return self._stack[self.top]
         
 if __name__ == '__main__':
