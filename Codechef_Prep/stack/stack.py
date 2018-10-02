@@ -2,9 +2,10 @@
     - Stack is a linear data structure which follows a particular order in which the operations are performed
     - The order may be LIFO(Last In First Out) or FILO(First In Last Out)
     - Stack operations:
-        - Push
-        - Pop
-        - Empty
+        - Push O(1)
+        - Pop O(1)
+        - Empty O(1)
+        - Peek O(1)
 '''
 
 class UnderflowException(Exception):

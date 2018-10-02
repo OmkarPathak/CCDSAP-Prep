@@ -2,8 +2,8 @@
     - Queue is a linear data structure which follows a particular order in which the operations are performed
     - The order is FIFO(First In First Out)
     - Queue operations:
-        - Enqueue
-        - Dequeue
+        - Enqueue O(1)
+        - Dequeue O(1)
 '''
 
 class UnderflowException(Exception):
@@ -24,12 +24,12 @@ class Queue(object):
     def is_empty(self):
         return self._queue == []
 
-    def enqueue(self, data):
+    def enqueue(self, element):
         '''
-            :param data: data to be inserted (enqueued) in the queue
+            :param element: element to be inserted (enqueued) in the queue
         '''
         self.__rear += 1
-        self._queue.insert(0, data)
+        self._queue.insert(0, element)
         return
     
     def dequeue(self):
@@ -42,9 +42,15 @@ class Queue(object):
         return self._queue.pop()
     
     def get_rear(self):
+        '''
+            :return: rear element from the queue
+        '''
         return self.__rear
 
     def get_front(self):
+        '''
+            :return: front element from the queue
+        '''
         return self.__front
 
 if __name__ == '__main__':
@@ -54,4 +60,5 @@ if __name__ == '__main__':
     print(queue)
     print(queue.dequeue())
     print(queue.dequeue())
+    print(queue)
     print(queue.get_front(), queue.get_rear())
