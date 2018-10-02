@@ -16,7 +16,7 @@ class OverflowException(Exception):
 class Stack(object):
     def __init__(self):
         self._stack = []
-        self.top = -1
+        self.__top = -1
 
     def __str__(self):
         return ', '.join([str(i) for i in self._stack])
@@ -26,7 +26,7 @@ class Stack(object):
             :param element: data element to be pushed onto stack
         '''
         self._stack.append(element)
-        self.top += 1
+        self.__top += 1
         return
 
     def pop(self):
@@ -34,9 +34,9 @@ class Stack(object):
             pops the topmost element from stack
         '''
         if not self.is_empty():
-            self.top -= 1
-            value = self._stack[self.top + 1]
-            del self._stack[self.top + 1]
+            self.__top -= 1
+            value = self._stack[self.__top + 1]
+            del self._stack[self.__top + 1]
             return value
         else:
             raise UnderflowException
@@ -53,7 +53,7 @@ class Stack(object):
         '''
         if self.is_empty():
             return -1
-        return self._stack[self.top]
+        return self._stack[self.__top]
         
 if __name__ == '__main__':
     stack = Stack()
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     stack.push(3)
     stack.push(4)
     print(stack)
-    print(stack.top)
+    print(stack.peek())
     stack.pop()
     stack.pop()
     print(stack)
