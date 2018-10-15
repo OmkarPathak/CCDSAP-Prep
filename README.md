@@ -9,10 +9,11 @@ My Practice Problems for CodeChef Certified Data Structure &amp; Algorithms Prog
 
 - [Implementation of Array in Python](Codechef_Prep/arrays/array.py)
 - [Array Rotation](Codechef_Prep/arrays/array_operations/array_rotation.py)
-- [CHN15A](Codechef_Prep/arrays/programs_on_array/CHN15A.py)
-- [CNOTE](Codechef_Prep/arrays/programs_on_array/CNOTE.py)
-- [LECANDY](Codechef_Prep/arrays/programs_on_array/LECANDY.py)
-- [RAINBOWA](Codechef_Prep/arrays/programs_on_array/RAINBOWA.py)
+- Practice Problems
+    - [CHN15A](Codechef_Prep/arrays/programs_on_array/CHN15A.py)
+    - [CNOTE](Codechef_Prep/arrays/programs_on_array/CNOTE.py)
+    - [LECANDY](Codechef_Prep/arrays/programs_on_array/LECANDY.py)
+    - [RAINBOWA](Codechef_Prep/arrays/programs_on_array/RAINBOWA.py)
 
 # Stack
 
@@ -28,3 +29,4 @@ My Practice Problems for CodeChef Certified Data Structure &amp; Algorithms Prog
 
 - [Implementation of Queue in Python](Codechef_Prep/queue/queue.py)
 - [Implementation of Queue using Stack](Codechef_Prep/queue/queue_using_stack.py)
+- [Implementation of Priority Queue](Codechef_Prep/queue/priority_queue.py)

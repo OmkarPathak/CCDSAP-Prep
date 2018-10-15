@@ -3,11 +3,11 @@
     - Elements of array are stored in successive memory locations
     - Each array element can be accessed using index number
     - Array operations:
-        - Traversal
-        - Insertion
-        - Deletion
-        - Sorting
-        - Searching
+        - Accessing  O(1)
+        - Insertion  O(n)
+        - Deletion   O(n)
+        - Sorting    O(n)
+        - Searching  O(n)
 '''
 
 class Array(object):
