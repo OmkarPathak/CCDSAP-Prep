@@ -24,9 +24,12 @@ My Practice Problems for CodeChef Certified Data Structure &amp; Algorithms Prog
 - [Postfix to Infix conversion](Codechef_Prep/stack/postfix_to_infix.py)
 - [Infix to Prefix](Codechef_Prep/stack/infix_to_prefix.py)
 - [Implementation of Stack using Queue](Codechef_Prep/stack/stack_using_queue.py)
+- Practice Problems
+    - [COMPILER](Codechef_Prep/stack/compiler.py)
 
 # Queue
 
 - [Implementation of Queue in Python](Codechef_Prep/queue/queue.py)
 - [Implementation of Queue using Stack](Codechef_Prep/queue/queue_using_stack.py)
 - [Implementation of Priority Queue](Codechef_Prep/queue/priority_queue.py)
+- [Implementation of Circular Queue](Codechef_Prep/queue/circular_queue.py)
